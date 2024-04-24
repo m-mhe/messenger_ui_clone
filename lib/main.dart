@@ -1,16 +1,8 @@
-import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:messenger_ui_clone/messenger.dart';
 
 void main() {
-  runApp(
-    DevicePreview(
-      enabled: false,
-      builder: (context) {
-        return const MyApp();
-      },
-    ),
-  );
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -21,9 +13,6 @@ class MyApp extends StatelessWidget {
     // TODO: implement build
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      useInheritedMediaQuery: true,
-      locale: DevicePreview.locale(context),
-      builder: DevicePreview.appBuilder,
       themeMode: ThemeMode.dark,
       darkTheme: ThemeData(
         appBarTheme: const AppBarTheme(

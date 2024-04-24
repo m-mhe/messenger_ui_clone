@@ -10,7 +10,6 @@ environment:
 
 
 dependencies:
-  device_preview: ^1.1.0
   flutter:
     sdk: flutter
 
